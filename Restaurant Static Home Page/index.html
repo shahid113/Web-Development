@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- header div -->
+    <div class="header">
+        <div class="logo">R!</div>
+
+        <div class="login-create">
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+            <div class="create-account">
+                <a href="#">Create an account</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header div ending -->
+
+    <!-- Main div Starting -->
+    <div class="main-div">
+
+        <div class="heading">Breakfast Places in Mumbai</div>
+
+        <!-- Sidebar div Starting -->
+        <div class="sidebar">
+
+            <div class="filter">
+                <table class="side-bar-table">
+                    <tr>
+                        <th>Filters</th>
+                    </tr>
+                    <tr>
+                        <td>Select Location</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option selected > Select Location</option>
+                                <option> Juhu Beach </option>
+                                <option>Colaba Causeway</option>
+                                <option>Gateway of India</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cuisine">
+                Cuisine
+                <form action="">
+                    <input type="checkbox" id="north">
+                    <label for="north"> North Indian</label><br>
+
+                    <input type="checkbox" id="south">
+                    <label for="south"> South Indian</label><br>
+
+                    <input type="checkbox" id="chinese">
+                    <label for="chinese"> Chinese</label><br>
+
+                    <input type="checkbox" id="fast-food">
+                    <label for="fast-food"> Fast Food</label><br>
+
+                    <input type="checkbox" id="street-food">
+                    <label for="street-food">Street Food</label><br>
+                </form>
+            </div>
+
+            <div class="cost">
+                Cost For Two
+                <form action="">
+
+                    <input type="radio" id="less-five-hun" name="pricing">
+                    <label for="less-five-hun">Less than 500</label><br>
+
+                    <input type="radio" id="five-hun" name="pricing">
+                    <label for="five-hun">`500 to `1000</label><br>
+
+                    <input type="radio" id="thousand" name="pricing">
+                    <label for="thousand">`1000 to `1500</label><br>
+
+                    <input type="radio" id="fifteen" name="pricing">
+                    <label for="fiteen">`1500 to `2000</label><br>
+
+                    <input type="radio" id="two" name="pricing">
+                    <label for="two">`2000+</label><br>
+
+                </form>
+            </div>
+
+            <div class="sort">
+                <span style="font-weight: 600; font-size:medium">Sort</span>
+                <form action="">
+
+                    <input type="radio" id="low-high" name="sorting">
+                    <label for="low-high">Price low to high</label><br>
+
+                    <input type="radio" id="high-low" name="sorting">
+                    <label for="high-low">Price high to low</label><br>
+                </form>
+            </div>
+
+        </div>
+        <!-- Sidebar div ending -->
+
+
+        <!-- items div starting -->
+        <div style="display: inline-block; vertical-align: top; margin:3%">
+            
+            <!-- first item div-->
+            <div class="item">
+                <div style="display: inline-block;">
+                    <img class="image" src="food.png" />
+                </div>
+                <div style="display: inline-block; vertical-align: top; margin-top:2%; margin-left: 6%;">
+                    <div class="t1">The Big Chill Cakery</div>
+                    <div class="t2">FORT</div>
+                    <div class="t3">Shop 1, Plot D, Samruddhi Complex, Chincholi…</div>
+                </div>
+                <hr style="margin-top:3%;">
+                <div>
+                    <table class="item-table">
+                        <tr>
+                            <th>CUISINES:</th>
+                            <td>Bakery</td>
+                        </tr>
+                        <tr>
+                            <th>COST FOR TWO:</th>
+                            <td>&#8377;700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Second item div starting -->
+            <div class="item">
+                <div style="display: inline-block;">
+                    <img class="image" src="food.png" />
+                </div>
+                <div style="display: inline-block; vertical-align: top; margin-top:2%; margin-left: 6%;">
+                    <div class="t1">The Bake Shop</div>
+                    <div class="t2">FORT</div>
+                    <div class="t3">Shop 1, Plot D, Samruddhi Complex, Chincholi…</div>
+                </div>
+                <hr style="margin-top:3%;">
+                <div>
+                    <table class="item-table">
+                        <tr>
+                            <th>CUISINES:</th>
+                            <td>Bakery</td>
+                        </tr>
+                        <tr>
+                            <th>COST FOR TWO:</th>
+                            <td>&#8377;700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination div -->
+            <div class="pagination">
+                        <a href="#"><</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">></a>
+            </div>
+            <!-- Pagination div ending -->
+
+        </div>
+        <!-- item container div ending -->
+
+    </div> 
+    <!-- Main div ending -->
+
+</body>
+
+</html>
