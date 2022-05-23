@@ -76,7 +76,7 @@ const orderData = {
   function sum(pre, next){
       return pre+next;
   }
-
+  
 
   const headers = Object.keys(orderData)
 
@@ -88,6 +88,6 @@ const orderData = {
         'percentage':((orderData[item]/total)*100).toFixed(2)
       }
    })
-  
+
 
   
