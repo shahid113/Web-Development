@@ -1,13 +1,14 @@
-*{
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+* {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 
-body{
+body {
     background: black;
     box-sizing: border-box;
 }
@@ -18,65 +19,86 @@ body{
     background-size: cover;
     width: 100%;
     height: 750px;
-
 }
 
-#logo{
-    height:55px;
+.header-section::before {
+    content: "";
+    background-image: url('header.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+#logo {
+    position: relative;
+    height: 55px;
     width: 170px;
 }
 
-#selectInput{
+#selectInput {
+    position: relative;
     background: none;
     width: 100px;
     height: 40px;
     border-radius: 2px;
-    
+
 }
 
-#signin{
+#signin {
+    position: relative;
     text-decoration: none;
     color: white;
     background-color: red;
-    padding:0.76rem;
-    border-radius:3px;
+    padding: 0.76rem;
+    border-radius: 3px;
     margin-left: 27px;
 }
 
 
-.middle-part{
+.middle-part {
+    position: relative;
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-title{
-    font-size:3.5rem;
+.main-title {
+    position: relative;
+    font-size: 3.5rem;
     color: white;
     font-weight: bold;
     line-height: 1.1;
 }
 
-.sub-title-1{
-    font-size:1.5rem;
-    color:white;
+.sub-title-1 {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
 
 }
-.sub-title-2{
+
+.sub-title-2 {
+    position: relative;
     font-size: 18px;
 }
 
-#emailInput{
-    height:71px;
+#emailInput {
+    position: relative;
+    height: 71px;
     border-radius: none;
     width: 70%;
     margin-right: -3px;
 }
 
-.getButton{
-   border-radius:0px;
-   width: 29%;
-   font-size: 1.8rem;
-   height:4.4rem;
+.getButton {
+    position: relative;
+    border-radius: 0px;
+    width: 29%;
+    font-size: 1.8rem;
+    height: 4.4rem;
 }
