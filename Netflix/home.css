@@ -1,0 +1,81 @@
+*{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: black;
+    box-sizing: border-box;
+}
+
+.header-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+
+}
+
+#logo{
+    height:55px;
+    width: 170px;
+}
+
+#selectInput{
+    background: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    
+}
+
+#signin{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding:0.76rem;
+    border-radius:3px;
+    margin-left: 27px;
+}
+
+
+.middle-part{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title{
+    font-size:3.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.sub-title-1{
+    font-size:1.5rem;
+    color:white;
+
+}
+.sub-title-2{
+    font-size: 18px;
+}
+
+#emailInput{
+    height:71px;
+    border-radius: none;
+    width: 70%;
+    margin-right: -3px;
+}
+
+.getButton{
+   border-radius:0px;
+   width: 29%;
+   font-size: 1.8rem;
+   height:4.4rem;
+}
