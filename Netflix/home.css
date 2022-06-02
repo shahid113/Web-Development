@@ -14,9 +14,6 @@ body {
 }
 
 .header-section{
-    background-image: url('header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 750px;
 }
