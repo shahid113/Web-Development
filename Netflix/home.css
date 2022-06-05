@@ -9,14 +9,29 @@
 
 
 body {
-    background:black;
     box-sizing: border-box;
+    background: black;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.header-section::before {
+.nav-header{
+    height: 99vh;
+}
+
+.header-section{
+  height:85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-header::before{
     content: "";
-    background-image: url('header.jpg');
+    background-image: url('images/header.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -24,7 +39,9 @@ body {
     left: 0px;
     opacity: 0.3;
     z-index: -1;
+
 }
+
 
 #logo {
     height: 55px;
@@ -48,29 +65,21 @@ body {
     margin-left: 27px;
 }
 
-
-.middle-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height:700px;
-}
-
 .main-title {
-    font-size: 3.5rem;
+    font-size:4rem;
     color: white;
     font-weight: bold;
     line-height: 1.1;
 }
 
 .sub-title-1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
 
 }
 
 .sub-title-2 {
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 #emailInput {
@@ -88,31 +97,36 @@ body {
 
 }
 
-.tv-details{
-    height: 200px;
-    width: 500px;
+.card-body{
+    background: none;
 }
 
-.tv-details-2{
-    height: 200px;
-    width: 600px;
-}
-
-.t1{
-    font-size: 3.2rem;
+.tv-title{
+    font-size:3.5rem;
     font-weight: bold;
 }
-.t2{
-    font-size: 1.5rem;
 
+.tv-description{
+    font-size:18px;
 }
+
 
 .faq{
     background-color: rgb(48,48,48);
 }
 
 .footer{
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(190, 189, 189, 0.35) 0px 5px 15px;
+}
+
+.footerComponent{
+    width: 100%;
     width: 70%;
+    margin-top:8%;
 }
 
 .footer-sub-title{
@@ -120,25 +134,141 @@ body {
 }
 
 
+@media only screen and (max-width:600px) {
 
+    
+#logo {
+    height: 30px;
+    width: 90px;
+    margin-top: 4px;
+    position: relative;
+    left:-40px;
+}
 
-@media screen and (max-width:950px) {
-    .getButton {
-        height: 40px;
-        width: 150px;
-        margin-top: 10px;
-        font-size: 1.2rem;
-        border-radius: 1px;
-  }
+#selectInput {
+    background: none;
+    width: 80px;
+    height: 28px;
+    border-radius: 2px;
 
-  .middle-part{
-      height:500px;
-  }
+}
 
-  #emailInput{
-      margin-left: 0rem;
-      height: 50px;
-      width: 80%;
+#signin {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+
+.main-title {
+    font-size:2rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.sub-title-1 {
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.sub-title-2 {
+    font-size: 1rem;
+}
+
+#emailInput {
+    border-radius: none;
+    width: 100%;
+    height: 50%;
+    padding:1.5rem;
+    margin-left: 5px;
+}
+
+.getButton {
+    border-radius: 0px;
+    height: 100%;
+    font-size: 1.2rem;
+    width:40%;
+
+}
+
+.tv-title{
+    font-size:1.7rem;
+    font-weight: bold;
+}
+
+  
+}
+
+@media only screen and (max-width:992px) {
+    
+  .download-section, .kids-section{
+      display: flex;
+      flex-direction: column-reverse;
   }
 }
 
+
+@media only screen and (min-width:600px) and (max-width:992px) {
+    
+    
+    #logo {
+        height: 50px;
+        width: 150px;
+        margin-top: 4px;
+        position: relative;
+        left:-30px;
+    }
+    
+    #selectInput {
+        background: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 2px;
+        height:40px;
+    
+    }
+    
+    #signin {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 0.7rem;
+        border-radius: 3px;
+    }
+
+
+    .main-title {
+        font-size:3rem;
+        color: white;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+    
+    .sub-title-1 {
+        font-size: 1.5rem;
+        color: white;
+    
+    }
+    
+    .sub-title-2 {
+        font-size: 1.2rem;
+    }
+    
+    #emailInput {
+        border-radius: none;
+        width: 100%;
+        height: 50%;
+        padding:2rem;
+    }
+    
+    .getButton {
+        border-radius: 0px;
+        height: 100%;
+        font-size: 1.2rem;
+        width:25%;
+    
+    }
+}
