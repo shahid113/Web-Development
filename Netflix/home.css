@@ -16,7 +16,8 @@ body {
 }
 
 .nav-header{
-    height: 99vh;
+    height: 100vh;
+    border-bottom: 10px solid rgb(34, 34,34);
 }
 
 .header-section{
@@ -54,6 +55,10 @@ body {
     height: 40px;
     border-radius: 2px;
 
+}
+
+option{
+    background-color: black;
 }
 
 #signin {
@@ -101,13 +106,19 @@ body {
     background: none;
 }
 
+.tv-section{
+    border-bottom: 10px solid rgb(34, 34,34);
+}
+
 .tv-title{
     font-size:3.5rem;
     font-weight: bold;
+    line-height: 1;
 }
 
 .tv-description{
     font-size:18px;
+    margin-top:30px;
 }
 
 
@@ -120,7 +131,6 @@ body {
     height:80%;
     display: flex;
     justify-content: center;
-    box-shadow: rgba(190, 189, 189, 0.35) 0px 5px 15px;
 }
 
 .footerComponent{
@@ -131,6 +141,11 @@ body {
 
 .footer-sub-title{
     font-size: 12px;
+}
+
+.frequentDiv{
+    width: 70%;
+    margin-top:3%;
 }
 
 
